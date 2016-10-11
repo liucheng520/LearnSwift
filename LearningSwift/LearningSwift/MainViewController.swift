@@ -13,7 +13,7 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabBar.tintColor = UIColor.init(red: 60/255.0, green: 164/255.0, blue: 181/255.0, alpha: 1.0)
+        tabBar.tintColor = DEFCOLOR_A(r: 60, g: 164, b: 181, a: 1.0)
         let frist : FirstViewController = FirstViewController.init()
         let nav : UINavigationController = UINavigationController.init(rootViewController: frist)
         nav.navigationBar.backgroundColor = UIColor.green

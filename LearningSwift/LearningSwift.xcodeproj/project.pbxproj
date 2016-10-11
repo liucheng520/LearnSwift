@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5011AD1F1DAD33E3007821F5 /* HearderDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011AD1E1DAD33E3007821F5 /* HearderDefine.swift */; };
 		8E6BFC941DACE7C7009B6E10 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BFC931DACE7C7009B6E10 /* FirstViewController.swift */; };
 		8EDE4FD21DACE1FF009FD5A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE4FD11DACE1FF009FD5A3 /* AppDelegate.swift */; };
 		8EDE4FD91DACE1FF009FD5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5011AD1E1DAD33E3007821F5 /* HearderDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearderDefine.swift; sourceTree = "<group>"; };
 		8E6BFC931DACE7C7009B6E10 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		8EDE4FCE1DACE1FF009FD5A3 /* LearningSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDE4FD11DACE1FF009FD5A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				8EDE4FD11DACE1FF009FD5A3 /* AppDelegate.swift */,
 				8EDE4FFF1DACE3AC009FD5A3 /* MainViewController.swift */,
 				8E6BFC931DACE7C7009B6E10 /* FirstViewController.swift */,
+				5011AD1E1DAD33E3007821F5 /* HearderDefine.swift */,
 				8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */,
 				8EDE4FDA1DACE1FF009FD5A3 /* LaunchScreen.storyboard */,
 				8EDE4FDD1DACE1FF009FD5A3 /* Info.plist */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5011AD1F1DAD33E3007821F5 /* HearderDefine.swift in Sources */,
 				8E6BFC941DACE7C7009B6E10 /* FirstViewController.swift in Sources */,
 				8EDE4FD21DACE1FF009FD5A3 /* AppDelegate.swift in Sources */,
 				8EDE50001DACE3AC009FD5A3 /* MainViewController.swift in Sources */,
@@ -402,6 +406,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LearningSwift/PrefixHeader.pch";
 				INFOPLIST_FILE = LearningSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fff.LearningSwift;
@@ -414,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LearningSwift/PrefixHeader.pch";
 				INFOPLIST_FILE = LearningSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fff.LearningSwift;
