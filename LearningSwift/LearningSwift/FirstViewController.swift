@@ -8,93 +8,53 @@
 
 import UIKit
 
+class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    var tableView : UITableView!
 
-class FirstViewController: UIViewController {
-
-    var timer : Timer = Timer()  //定时器
-    var Counter : Float = 0.0    //记时
-    var IsPlaying : Bool = false
-    var timeLabel : UILabel!
-    var resetBtn : UIButton!
-    var startBtn : UIButton!
-    var holdBtn : UIButton!
+    var dataSource : NSArray = ["timeLearning","fontLearning"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), style: UITableViewStyle.grouped)
+        tableView.delegate = self
+        tableView.dataSource = self
+        view.addSubview(tableView)
         
-        //初始化时间显示
-        view.backgroundColor = UIColor.white
-    
-        //2016-10-11
-        
-        timeLabel = UILabel.init(frame: CGRect.init(x: 0, y: 64, width: 375, height: 200))
-        timeLabel.textAlignment = NSTextAlignment.center
-        timeLabel.backgroundColor = UIColor.black
-        timeLabel.textColor = UIColor.white
-        view.addSubview(timeLabel)
-        timeLabel.text = String(Counter)
-        
-        
-        resetBtn = UIButton.init(type: UIButtonType.custom)
-        resetBtn.setTitle("reset", for: UIControlState.normal)
-        
-        resetBtn.frame = CGRect.init(x: 0, y: 64, width: 375, height: 20)
-        resetBtn.backgroundColor = UIColor.black
-        view.addSubview(resetBtn)
-        resetBtn.addTarget(self, action: #selector(FirstViewController.reset), for: UIControlEvents.touchUpInside)
-        
-        
-        startBtn = UIButton.init(type: UIButtonType.custom)
-        startBtn.setTitle("start", for: UIControlState.normal)
-        
-        startBtn.frame = CGRect.init(x: 0, y: 270, width: 175.5, height: 50)
-        startBtn.backgroundColor = UIColor.green
-        view.addSubview(startBtn)
-        startBtn.addTarget(self, action: #selector(FirstViewController.start), for: UIControlEvents.touchUpInside)
-        
-        holdBtn = UIButton.init(type: UIButtonType.custom)
-        holdBtn.setTitle("hold", for: UIControlState.normal)
-        holdBtn.frame = CGRect.init(x: 175.5, y: 270, width: 175.5, height: 50)
-        view.addSubview(holdBtn)
-        holdBtn.backgroundColor = UIColor.red
-        holdBtn.addTarget(self, action: #selector(FirstViewController.hold), for: UIControlEvents.touchUpInside)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
-    func reset() -> Void {
-        timer.invalidate()
-        IsPlaying = false
-        Counter = 0
-        timeLabel.text = String(Counter)
-        startBtn.isEnabled = true
-        holdBtn.isEnabled = true
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSource.count
     }
     
-    func start() -> Void {
-        
-        if IsPlaying {
-            return
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        cell.textLabel?.text = dataSource[indexPath.row] as? String
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let viewCtrol = TimeLearnViewController.init()
+            viewCtrol.title = dataSource[indexPath.row] as? String
+            navigationController?.pushViewController(viewCtrol, animated: true)
+        }else{
+            let viewCtrol = FontLearnViewController.init()
+            viewCtrol.title = dataSource[indexPath.row] as? String
+            navigationController?.pushViewController(viewCtrol, animated: true)
         }
-    
-        startBtn.isEnabled = false
-        holdBtn.isEnabled = true
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(FirstViewController.countTimer), userInfo: nil, repeats: true)
-        IsPlaying = true
     }
     
-    func hold() -> Void {
-        
-        if !IsPlaying {
-            return
-        }
-        startBtn.isEnabled = true
-        holdBtn.isEnabled = false
-        timer.invalidate()
-        IsPlaying = false
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10.0
     }
-
-    func countTimer() -> Void {
-        Counter += 0.1
-        timeLabel.text = String(Counter)
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.00001
     }
 }

@@ -15,8 +15,7 @@ class MainViewController: UITabBarController {
 
         tabBar.tintColor = DEFCOLOR_A(r: 60, g: 164, b: 181, a: 1.0)
         let frist : FirstViewController = FirstViewController.init()
-        let nav : UINavigationController = UINavigationController.init(rootViewController: frist)
-        nav.navigationBar.backgroundColor = UIColor.green
+        let nav : BaseNaviController = BaseNaviController.init(rootViewController: frist)
         frist.title = "第一个"
         addChildViewController(nav)
         
