@@ -31,7 +31,7 @@ class BaseNaviController: UINavigationController {
     
     class func setUpNavifationBarTheme() -> Void{
         let navigationBar : UINavigationBar = UINavigationBar.appearance()
-        navigationBar.backgroundColor = UIColor.green
+        navigationBar.lc_setBackGroundColor(color: UIColor.green)
     }
     
 }

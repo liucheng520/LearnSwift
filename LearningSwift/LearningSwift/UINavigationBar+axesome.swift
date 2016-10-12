@@ -8,13 +8,17 @@
 
 import UIKit
 
+var overlayKey:CChar!
+
 extension UINavigationBar{
     
-//    func SYSTEM_VERSION_LESS_THAN(v:String) -> Bool {
-//        return (UIDevice.current.systemVersion.compare(v)) == CFComparisonResult.c
-//    }
-    
+    func SYSTEM_VERSION_LESS_THAN(v:String) -> Bool {
+        return UIDevice.current.systemVersion.compare(v) == ComparisonResult.orderedAscending
+    }
+
     public func lc_setBackGroundColor(color:UIColor) -> Void {
+        
+        setBackgroundImage(UIImage.init(), for: UIBarMetrics.default)
         
     }
     
