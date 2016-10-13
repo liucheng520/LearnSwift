@@ -8,6 +8,13 @@
 
 import UIKit
 
+struct vedio {
+    
+    let imageUrl : String
+    let name : String
+    let time : String
+}
+
 class LocalVedioCell: UITableViewCell {
 
     var playBtn : UIButton!
@@ -33,7 +40,47 @@ class LocalVedioCell: UITableViewCell {
     }
     
     func createSubViews() -> Void {
+        
+        //背景图片
+        backImageView = UIImageView.init()
+        addSubview(backImageView)
+        
+        //播放按钮
         playBtn = UIButton.init(type: UIButtonType.custom)
+        playBtn.setImage(UIImage.init(named: "playBtn"), for: UIControlState.normal)
+        contentView.addSubview(playBtn)
+        
+        //视频名称
+        nameLabel = UILabel.init()
+        nameLabel.textColor = UIColor.white
+        nameLabel.font = UIFont.boldSystemFont(ofSize: 18.0)
+        nameLabel.textAlignment = NSTextAlignment.center
+        contentView.addSubview(nameLabel)
+        
+        //播放时长
+        timeLable = UILabel.init()
+        timeLable.textColor = UIColor.white
+        timeLable.font = UIFont.systemFont(ofSize: 13.0)
+        timeLable.textAlignment = NSTextAlignment.center
+        contentView.addSubview(timeLable)
     }
 
+    public func setVedio(vedioM:vedio) -> Void {
+        backImageView.image = UIImage.init(named: vedioM.imageUrl)
+//        nameLabel.text = vedioM.name
+//        timeLable.text = vedioM.time
+    }
+    
+    override func layoutSubviews() {
+        
+        super.layoutSubviews()
+//        playBtn.frame = CGRect.init(x: 0, y: 0, width: 50, height: 50)
+//        playBtn.center = center
+        
+        backImageView.frame = frame
+        
+//        nameLabel.frame = CGRect.init(x: 0, y: frame.height * 0.5 + 30, width: kScreenWidth, height: 30)
+//        
+//        timeLable.frame = CGRect.init(x: 0, y: frame.height * 0.5 + 70, width: kScreenWidth, height: 20)
+    }
 }

@@ -12,7 +12,13 @@ class LocalVedioViewController: UIViewController,UITableViewDelegate,UITableView
     
     var tableView : UITableView!
     
-    var dataSource : NSArray = ["30 Days Swift"]
+    var dataSource : NSArray = [
+        vedio(imageUrl:"videoScreenshot01", name:"Introduce 3DS Mario" ,time:"Youtube - 06:32"),
+        vedio(imageUrl:"videoScreenshot02", name:"Emoji Among Us" ,time:"Vimeo - 3:34"),
+        vedio(imageUrl:"videoScreenshot03", name:"Seals Documentary" ,time:"Vine - 00:06"),
+        vedio(imageUrl:"videoScreenshot04", name:"Adventure Time" ,time:"Youtube - 02:39"),
+        vedio(imageUrl:"videoScreenshot05", name:"Facebook HQ" ,time:"Facebook - 10:20"),
+        vedio(imageUrl:"videoScreenshot06", name:"Lijiang Lugu Lake" ,time:"Allen - 20:30")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,20 +32,21 @@ class LocalVedioViewController: UIViewController,UITableViewDelegate,UITableView
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "vediocell")!
+        let cell : LocalVedioCell = tableView.dequeueReusableCell(withIdentifier: "vediocell")! as! LocalVedioCell
+        cell.setVedio(vedioM: dataSource[indexPath.row] as! vedio)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        return 200
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10.0
+        return 0.0001
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
