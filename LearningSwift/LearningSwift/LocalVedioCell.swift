@@ -15,13 +15,18 @@ struct vedio {
     let time : String
 }
 
+public protocol LocalVedioCellDelegate : NSObjectProtocol {
+    
+     func playBtnClick(btnClick:Bool)
+}
+
 class LocalVedioCell: UITableViewCell {
 
     var playBtn : UIButton!
     var backImageView : UIImageView!
     var nameLabel : UILabel!
     var timeLable : UILabel!
-    
+    var delegate : LocalVedioCellDelegate!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -43,11 +48,13 @@ class LocalVedioCell: UITableViewCell {
         
         //背景图片
         backImageView = UIImageView.init()
-        addSubview(backImageView)
+        backImageView.isUserInteractionEnabled = true
+        contentView.addSubview(backImageView)
         
         //播放按钮
         playBtn = UIButton.init(type: UIButtonType.custom)
         playBtn.setImage(UIImage.init(named: "playBtn"), for: UIControlState.normal)
+        playBtn .addTarget(self, action: #selector(self.playBtnClick), for: UIControlEvents.touchUpInside)
         contentView.addSubview(playBtn)
         
         //视频名称
@@ -67,20 +74,24 @@ class LocalVedioCell: UITableViewCell {
 
     public func setVedio(vedioM:vedio) -> Void {
         backImageView.image = UIImage.init(named: vedioM.imageUrl)
-//        nameLabel.text = vedioM.name
-//        timeLable.text = vedioM.time
+        nameLabel.text = vedioM.name
+        timeLable.text = vedioM.time
     }
     
     override func layoutSubviews() {
         
         super.layoutSubviews()
-//        playBtn.frame = CGRect.init(x: 0, y: 0, width: 50, height: 50)
-//        playBtn.center = center
+        playBtn.frame = CGRect.init(x: 0, y: 0, width: 50, height: 50)
+        playBtn.center = CGPoint.init(x: frame.size.width * 0.5, y: frame.size.height * 0.5)
         
-        backImageView.frame = frame
+        backImageView.frame = CGRect.init(x: 0, y: 0, width: kScreenWidth, height: frame.height)
         
-//        nameLabel.frame = CGRect.init(x: 0, y: frame.height * 0.5 + 30, width: kScreenWidth, height: 30)
-//        
-//        timeLable.frame = CGRect.init(x: 0, y: frame.height * 0.5 + 70, width: kScreenWidth, height: 20)
+        nameLabel.frame = CGRect.init(x: 0, y: frame.height * 0.5 + 30, width: kScreenWidth, height: 30)
+        
+        timeLable.frame = CGRect.init(x: 0, y: frame.height * 0.5 + 70, width: kScreenWidth, height: 20)
+    }
+    
+    func playBtnClick() -> Void {
+        
     }
 }
