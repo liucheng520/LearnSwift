@@ -7,10 +7,17 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
-class LocalVedioViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class LocalVedioViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,LocalVedioCellDelegate {
     
     var tableView : UITableView!
+    
+    var palyer : AVPlayer = AVPlayer.init()
+    
+    var palyerController : AVPlayerViewController = AVPlayerViewController.init()
+    
     
     var dataSource : NSArray = [
         vedio(imageUrl:"videoScreenshot01", name:"Introduce 3DS Mario" ,time:"Youtube - 06:32"),
@@ -38,6 +45,7 @@ class LocalVedioViewController: UIViewController,UITableViewDelegate,UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : LocalVedioCell = tableView.dequeueReusableCell(withIdentifier: "vediocell")! as! LocalVedioCell
         cell.setVedio(vedioM: dataSource[indexPath.row] as! vedio)
+        cell.delegate = self
         return cell
     }
     
@@ -51,6 +59,16 @@ class LocalVedioViewController: UIViewController,UITableViewDelegate,UITableView
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.00001
+    }
+    
+    func playBtnClick(btnClick: Bool) {
+        let path = Bundle.main.path(forResource: "emoji zone", ofType: "mp4")
+        palyer = AVPlayer.init(url: URL.init(fileURLWithPath: path!))
+        palyerController.player = palyer
+        palyerController.player?.play()
+        present(palyerController, animated: true) { 
+            
+        }
     }
 
 }

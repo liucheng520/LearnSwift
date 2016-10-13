@@ -92,6 +92,6 @@ class LocalVedioCell: UITableViewCell {
     }
     
     func playBtnClick() -> Void {
-        
+        delegate.playBtnClick(btnClick: true)
     }
 }
