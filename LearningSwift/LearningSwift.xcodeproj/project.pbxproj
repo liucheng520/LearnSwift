@@ -12,6 +12,9 @@
 		8E5A200B1DAE1F160076CFB1 /* LocalVedioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A200A1DAE1F160076CFB1 /* LocalVedioCell.swift */; };
 		8E5A200D1DAE20780076CFB1 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8E5A200C1DAE20780076CFB1 /* emoji zone.mp4 */; };
 		8E6BFC941DACE7C7009B6E10 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BFC931DACE7C7009B6E10 /* FirstViewController.swift */; };
+		8E8539B81DB0710B002642BA /* ImageBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8539B71DB0710B002642BA /* ImageBrowserViewController.swift */; };
+		8E8539BA1DB071BF002642BA /* LClineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8539B91DB071BF002642BA /* LClineLayout.swift */; };
+		8E8539BC1DB07275002642BA /* LineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8539BB1DB07275002642BA /* LineCollectionViewCell.swift */; };
 		8E8900041DADDDD800D81CBA /* Gaspar Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E8900001DADDDD800D81CBA /* Gaspar Regular.otf */; };
 		8E8900051DADDDD800D81CBA /* MFJinHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E8900011DADDDD800D81CBA /* MFJinHei_Noncommercial-Regular.ttf */; };
 		8E8900061DADDDD800D81CBA /* MFTongXin_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E8900021DADDDD800D81CBA /* MFTongXin_Noncommercial-Regular.ttf */; };
@@ -51,6 +54,9 @@
 		8E5A200A1DAE1F160076CFB1 /* LocalVedioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalVedioCell.swift; sourceTree = "<group>"; };
 		8E5A200C1DAE20780076CFB1 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
 		8E6BFC931DACE7C7009B6E10 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		8E8539B71DB0710B002642BA /* ImageBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBrowserViewController.swift; sourceTree = "<group>"; };
+		8E8539B91DB071BF002642BA /* LClineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LClineLayout.swift; sourceTree = "<group>"; };
+		8E8539BB1DB07275002642BA /* LineCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineCollectionViewCell.swift; sourceTree = "<group>"; };
 		8E8900001DADDDD800D81CBA /* Gaspar Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaspar Regular.otf"; sourceTree = "<group>"; };
 		8E8900011DADDDD800D81CBA /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
 		8E8900021DADDDD800D81CBA /* MFTongXin_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
@@ -98,6 +104,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E8539B61DB070D7002642BA /* 16-10-14 */ = {
+			isa = PBXGroup;
+			children = (
+				8E8539B71DB0710B002642BA /* ImageBrowserViewController.swift */,
+				8E8539B91DB071BF002642BA /* LClineLayout.swift */,
+				8E8539BB1DB07275002642BA /* LineCollectionViewCell.swift */,
+			);
+			name = "16-10-14";
+			sourceTree = "<group>";
+		};
 		8EDE4FC51DACE1FF009FD5A3 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +145,7 @@
 				8E5A20081DAE1E290076CFB1 /* LocalVedioViewController.swift */,
 				8E5A200A1DAE1F160076CFB1 /* LocalVedioCell.swift */,
 				5011AD1E1DAD33E3007821F5 /* HearderDefine.swift */,
+				8E8539B61DB070D7002642BA /* 16-10-14 */,
 				8E89000A1DADE33A00D81CBA /* BaseNaviController.swift */,
 				8E89000E1DADEC0D00D81CBA /* UINavigationBar+axesome.swift */,
 				8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */,
@@ -299,10 +316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8539B81DB0710B002642BA /* ImageBrowserViewController.swift in Sources */,
 				8E5A20091DAE1E290076CFB1 /* LocalVedioViewController.swift in Sources */,
+				8E8539BA1DB071BF002642BA /* LClineLayout.swift in Sources */,
 				8E89000F1DADEC0D00D81CBA /* UINavigationBar+axesome.swift in Sources */,
 				5011AD1F1DAD33E3007821F5 /* HearderDefine.swift in Sources */,
 				8E6BFC941DACE7C7009B6E10 /* FirstViewController.swift in Sources */,
+				8E8539BC1DB07275002642BA /* LineCollectionViewCell.swift in Sources */,
 				8E8900091DADDFEC00D81CBA /* FontLearnViewController.swift in Sources */,
 				8EDE4FD21DACE1FF009FD5A3 /* AppDelegate.swift in Sources */,
 				8E89FFFB1DADDAAD00D81CBA /* TimeLearnViewController.swift in Sources */,
