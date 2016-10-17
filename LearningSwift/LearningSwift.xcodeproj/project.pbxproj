@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5011AD1F1DAD33E3007821F5 /* HearderDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011AD1E1DAD33E3007821F5 /* HearderDefine.swift */; };
+		8E595D0D1DB4D2BC0078BCC3 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E595D0C1DB4D2BC0078BCC3 /* LocationViewController.swift */; };
 		8E5A20091DAE1E290076CFB1 /* LocalVedioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A20081DAE1E290076CFB1 /* LocalVedioViewController.swift */; };
 		8E5A200B1DAE1F160076CFB1 /* LocalVedioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A200A1DAE1F160076CFB1 /* LocalVedioCell.swift */; };
 		8E5A200D1DAE20780076CFB1 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8E5A200C1DAE20780076CFB1 /* emoji zone.mp4 */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		5011AD1E1DAD33E3007821F5 /* HearderDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearderDefine.swift; sourceTree = "<group>"; };
+		8E595D0C1DB4D2BC0078BCC3 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		8E5A20081DAE1E290076CFB1 /* LocalVedioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalVedioViewController.swift; sourceTree = "<group>"; };
 		8E5A200A1DAE1F160076CFB1 /* LocalVedioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalVedioCell.swift; sourceTree = "<group>"; };
 		8E5A200C1DAE20780076CFB1 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E595D0B1DB4D2940078BCC3 /* 16-10-17 */ = {
+			isa = PBXGroup;
+			children = (
+				8E595D0C1DB4D2BC0078BCC3 /* LocationViewController.swift */,
+			);
+			name = "16-10-17";
+			sourceTree = "<group>";
+		};
 		8E8539B61DB070D7002642BA /* 16-10-14 */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +165,7 @@
 				5011AD1E1DAD33E3007821F5 /* HearderDefine.swift */,
 				8E8539B61DB070D7002642BA /* 16-10-14 */,
 				8EE535471DB1E7C8004BF2F7 /* 16-10-15 */,
+				8E595D0B1DB4D2940078BCC3 /* 16-10-17 */,
 				8E89000A1DADE33A00D81CBA /* BaseNaviController.swift */,
 				8E89000E1DADEC0D00D81CBA /* UINavigationBar+axesome.swift */,
 				8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */,
@@ -352,6 +363,7 @@
 				8EDE4FD21DACE1FF009FD5A3 /* AppDelegate.swift in Sources */,
 				8E89FFFB1DADDAAD00D81CBA /* TimeLearnViewController.swift in Sources */,
 				8E5A200B1DAE1F160076CFB1 /* LocalVedioCell.swift in Sources */,
+				8E595D0D1DB4D2BC0078BCC3 /* LocationViewController.swift in Sources */,
 				8EDE50001DACE3AC009FD5A3 /* MainViewController.swift in Sources */,
 				8E89000B1DADE33A00D81CBA /* BaseNaviController.swift in Sources */,
 			);

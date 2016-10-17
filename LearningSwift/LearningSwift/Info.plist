@@ -87,5 +87,9 @@
 	<string>希望能访问您的麦克风，以便为您提供更方便的服务</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>希望能访问您的相册，以便为您提供更方便的服务</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Where are you?</string>
+	<key>NSLocationWhenInUseUsageDescription - 2</key>
+	<string>Allow to use location and can send it to me</string>
 </dict>
 </plist>
