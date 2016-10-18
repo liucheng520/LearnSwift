@@ -24,6 +24,7 @@
 		8E89000B1DADE33A00D81CBA /* BaseNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89000A1DADE33A00D81CBA /* BaseNaviController.swift */; };
 		8E89000F1DADEC0D00D81CBA /* UINavigationBar+axesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89000E1DADEC0D00D81CBA /* UINavigationBar+axesome.swift */; };
 		8E89FFFB1DADDAAD00D81CBA /* TimeLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89FFFA1DADDAAD00D81CBA /* TimeLearnViewController.swift */; };
+		8EDE3B771DB5D50300412C49 /* PullRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */; };
 		8EDE4FD21DACE1FF009FD5A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE4FD11DACE1FF009FD5A3 /* AppDelegate.swift */; };
 		8EDE4FD91DACE1FF009FD5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */; };
 		8EDE4FDC1DACE1FF009FD5A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE4FDA1DACE1FF009FD5A3 /* LaunchScreen.storyboard */; };
@@ -71,6 +72,7 @@
 		8E89000A1DADE33A00D81CBA /* BaseNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaviController.swift; sourceTree = "<group>"; };
 		8E89000E1DADEC0D00D81CBA /* UINavigationBar+axesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+axesome.swift"; sourceTree = "<group>"; };
 		8E89FFFA1DADDAAD00D81CBA /* TimeLearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLearnViewController.swift; sourceTree = "<group>"; };
+		8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRefreshViewController.swift; sourceTree = "<group>"; };
 		8EDE4FCE1DACE1FF009FD5A3 /* LearningSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDE4FD11DACE1FF009FD5A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 			name = "16-10-14";
 			sourceTree = "<group>";
 		};
+		8EDE3B751DB5D4D900412C49 /* 16-10-18 */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */,
+			);
+			name = "16-10-18";
+			sourceTree = "<group>";
+		};
 		8EDE4FC51DACE1FF009FD5A3 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 				8E8539B61DB070D7002642BA /* 16-10-14 */,
 				8EE535471DB1E7C8004BF2F7 /* 16-10-15 */,
 				8E595D0B1DB4D2940078BCC3 /* 16-10-17 */,
+				8EDE3B751DB5D4D900412C49 /* 16-10-18 */,
 				8E89000A1DADE33A00D81CBA /* BaseNaviController.swift */,
 				8E89000E1DADEC0D00D81CBA /* UINavigationBar+axesome.swift */,
 				8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */,
@@ -350,6 +361,7 @@
 			files = (
 				8EE5354F1DB1E822004BF2F7 /* CenterViewController.swift in Sources */,
 				8E8539B81DB0710B002642BA /* ImageBrowserViewController.swift in Sources */,
+				8EDE3B771DB5D50300412C49 /* PullRefreshViewController.swift in Sources */,
 				8EE5354D1DB1E819004BF2F7 /* RightViewController.swift in Sources */,
 				8E5A20091DAE1E290076CFB1 /* LocalVedioViewController.swift in Sources */,
 				8E8539BA1DB071BF002642BA /* LClineLayout.swift in Sources */,
