@@ -25,6 +25,8 @@
 		8E89000F1DADEC0D00D81CBA /* UINavigationBar+axesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89000E1DADEC0D00D81CBA /* UINavigationBar+axesome.swift */; };
 		8E89FFFB1DADDAAD00D81CBA /* TimeLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89FFFA1DADDAAD00D81CBA /* TimeLearnViewController.swift */; };
 		8EDE3B771DB5D50300412C49 /* PullRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */; };
+		8EDE3B791DB5FEAD00412C49 /* Ecstasy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE3B781DB5FEAD00412C49 /* Ecstasy.mp3 */; };
+		8EDE3B7B1DB5FECF00412C49 /* AudioAndColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */; };
 		8EDE4FD21DACE1FF009FD5A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE4FD11DACE1FF009FD5A3 /* AppDelegate.swift */; };
 		8EDE4FD91DACE1FF009FD5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */; };
 		8EDE4FDC1DACE1FF009FD5A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE4FDA1DACE1FF009FD5A3 /* LaunchScreen.storyboard */; };
@@ -73,6 +75,8 @@
 		8E89000E1DADEC0D00D81CBA /* UINavigationBar+axesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+axesome.swift"; sourceTree = "<group>"; };
 		8E89FFFA1DADDAAD00D81CBA /* TimeLearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLearnViewController.swift; sourceTree = "<group>"; };
 		8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRefreshViewController.swift; sourceTree = "<group>"; };
+		8EDE3B781DB5FEAD00412C49 /* Ecstasy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ecstasy.mp3; sourceTree = "<group>"; };
+		8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioAndColorViewController.swift; sourceTree = "<group>"; };
 		8EDE4FCE1DACE1FF009FD5A3 /* LearningSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDE4FD11DACE1FF009FD5A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */,
+				8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */,
 			);
 			name = "16-10-18";
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 				8EDE4FDD1DACE1FF009FD5A3 /* Info.plist */,
 				8E8900001DADDDD800D81CBA /* Gaspar Regular.otf */,
 				8E5A200C1DAE20780076CFB1 /* emoji zone.mp4 */,
+				8EDE3B781DB5FEAD00412C49 /* Ecstasy.mp3 */,
 				8E8900011DADDDD800D81CBA /* MFJinHei_Noncommercial-Regular.ttf */,
 				8E8900021DADDDD800D81CBA /* MFTongXin_Noncommercial-Regular.ttf */,
 				8E8900031DADDDD800D81CBA /* MFZhiHei_Noncommercial-Regular.ttf */,
@@ -333,6 +339,7 @@
 				8E8900071DADDDD800D81CBA /* MFZhiHei_Noncommercial-Regular.ttf in Resources */,
 				8EDE4FDC1DACE1FF009FD5A3 /* LaunchScreen.storyboard in Resources */,
 				8E8900051DADDDD800D81CBA /* MFJinHei_Noncommercial-Regular.ttf in Resources */,
+				8EDE3B791DB5FEAD00412C49 /* Ecstasy.mp3 in Resources */,
 				8E8900041DADDDD800D81CBA /* Gaspar Regular.otf in Resources */,
 				8EDE4FD91DACE1FF009FD5A3 /* Assets.xcassets in Resources */,
 			);
@@ -376,6 +383,7 @@
 				8E89FFFB1DADDAAD00D81CBA /* TimeLearnViewController.swift in Sources */,
 				8E5A200B1DAE1F160076CFB1 /* LocalVedioCell.swift in Sources */,
 				8E595D0D1DB4D2BC0078BCC3 /* LocationViewController.swift in Sources */,
+				8EDE3B7B1DB5FECF00412C49 /* AudioAndColorViewController.swift in Sources */,
 				8EDE50001DACE3AC009FD5A3 /* MainViewController.swift in Sources */,
 				8E89000B1DADE33A00D81CBA /* BaseNaviController.swift in Sources */,
 			);
