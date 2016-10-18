@@ -12,7 +12,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 
     var tableView : UITableView!
 
-    var dataSource : NSArray = ["timeLearning","fontLearning","localVedioLearning","imageBrowser","moveTest","LocationViewController","PullRefresh","AudioAndColor"]
+    var dataSource : NSArray = ["timeLearning","fontLearning","localVedioLearning","imageBrowser","moveTest","LocationViewController","PullRefresh","AudioAndColor","ImagePreView"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +69,10 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             navigationController?.pushViewController(viewCtrol, animated: true)
         }else if indexPath.row == 7 {
             let viewCtrol = AudioAndColorViewController.init()
+            viewCtrol.title = dataSource[indexPath.row] as? String
+            navigationController?.pushViewController(viewCtrol, animated: true)
+        }else if indexPath.row == 7 {
+            let viewCtrol = ImagePreViewController.init()
             viewCtrol.title = dataSource[indexPath.row] as? String
             navigationController?.pushViewController(viewCtrol, animated: true)
         }

@@ -27,6 +27,7 @@
 		8EDE3B771DB5D50300412C49 /* PullRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */; };
 		8EDE3B791DB5FEAD00412C49 /* Ecstasy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE3B781DB5FEAD00412C49 /* Ecstasy.mp3 */; };
 		8EDE3B7B1DB5FECF00412C49 /* AudioAndColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */; };
+		8EDE3B7D1DB60F3B00412C49 /* ImagePreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE3B7C1DB60F3B00412C49 /* ImagePreViewController.swift */; };
 		8EDE4FD21DACE1FF009FD5A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE4FD11DACE1FF009FD5A3 /* AppDelegate.swift */; };
 		8EDE4FD91DACE1FF009FD5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */; };
 		8EDE4FDC1DACE1FF009FD5A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE4FDA1DACE1FF009FD5A3 /* LaunchScreen.storyboard */; };
@@ -77,6 +78,7 @@
 		8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRefreshViewController.swift; sourceTree = "<group>"; };
 		8EDE3B781DB5FEAD00412C49 /* Ecstasy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ecstasy.mp3; sourceTree = "<group>"; };
 		8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioAndColorViewController.swift; sourceTree = "<group>"; };
+		8EDE3B7C1DB60F3B00412C49 /* ImagePreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreViewController.swift; sourceTree = "<group>"; };
 		8EDE4FCE1DACE1FF009FD5A3 /* LearningSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDE4FD11DACE1FF009FD5A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDE4FD81DACE1FF009FD5A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */,
 				8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */,
+				8EDE3B7C1DB60F3B00412C49 /* ImagePreViewController.swift */,
 			);
 			name = "16-10-18";
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				8E5A20091DAE1E290076CFB1 /* LocalVedioViewController.swift in Sources */,
 				8E8539BA1DB071BF002642BA /* LClineLayout.swift in Sources */,
 				8EE5354B1DB1E810004BF2F7 /* LeftViewController.swift in Sources */,
+				8EDE3B7D1DB60F3B00412C49 /* ImagePreViewController.swift in Sources */,
 				8EE535491DB1E7FF004BF2F7 /* MoveTestViewController.swift in Sources */,
 				8E89000F1DADEC0D00D81CBA /* UINavigationBar+axesome.swift in Sources */,
 				5011AD1F1DAD33E3007821F5 /* HearderDefine.swift in Sources */,
