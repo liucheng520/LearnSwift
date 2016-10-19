@@ -13,6 +13,7 @@
 		8E5A200B1DAE1F160076CFB1 /* LocalVedioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A200A1DAE1F160076CFB1 /* LocalVedioCell.swift */; };
 		8E5A200D1DAE20780076CFB1 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8E5A200C1DAE20780076CFB1 /* emoji zone.mp4 */; };
 		8E6BFC941DACE7C7009B6E10 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BFC931DACE7C7009B6E10 /* FirstViewController.swift */; };
+		8E82AAB11DB70BE600286A91 /* ImagePreScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82AAB01DB70BE600286A91 /* ImagePreScrollView.swift */; };
 		8E8539B81DB0710B002642BA /* ImageBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8539B71DB0710B002642BA /* ImageBrowserViewController.swift */; };
 		8E8539BA1DB071BF002642BA /* LClineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8539B91DB071BF002642BA /* LClineLayout.swift */; };
 		8E8539BC1DB07275002642BA /* LineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8539BB1DB07275002642BA /* LineCollectionViewCell.swift */; };
@@ -24,6 +25,9 @@
 		8E89000B1DADE33A00D81CBA /* BaseNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89000A1DADE33A00D81CBA /* BaseNaviController.swift */; };
 		8E89000F1DADEC0D00D81CBA /* UINavigationBar+axesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89000E1DADEC0D00D81CBA /* UINavigationBar+axesome.swift */; };
 		8E89FFFB1DADDAAD00D81CBA /* TimeLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89FFFA1DADDAAD00D81CBA /* TimeLearnViewController.swift */; };
+		8ECF6D1C1DB7687100CF42FC /* BackGroundVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF6D1B1DB7687100CF42FC /* BackGroundVideoController.swift */; };
+		8ECF6D1E1DB76A0100CF42FC /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8ECF6D1D1DB76A0100CF42FC /* moments.mp4 */; };
+		8ECF6D201DB777BD00CF42FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF6D1F1DB777BD00CF42FC /* LoginViewController.swift */; };
 		8EDE3B771DB5D50300412C49 /* PullRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */; };
 		8EDE3B791DB5FEAD00412C49 /* Ecstasy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE3B781DB5FEAD00412C49 /* Ecstasy.mp3 */; };
 		8EDE3B7B1DB5FECF00412C49 /* AudioAndColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */; };
@@ -64,6 +68,7 @@
 		8E5A200A1DAE1F160076CFB1 /* LocalVedioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalVedioCell.swift; sourceTree = "<group>"; };
 		8E5A200C1DAE20780076CFB1 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
 		8E6BFC931DACE7C7009B6E10 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		8E82AAB01DB70BE600286A91 /* ImagePreScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreScrollView.swift; sourceTree = "<group>"; };
 		8E8539B71DB0710B002642BA /* ImageBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBrowserViewController.swift; sourceTree = "<group>"; };
 		8E8539B91DB071BF002642BA /* LClineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LClineLayout.swift; sourceTree = "<group>"; };
 		8E8539BB1DB07275002642BA /* LineCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -75,6 +80,9 @@
 		8E89000A1DADE33A00D81CBA /* BaseNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaviController.swift; sourceTree = "<group>"; };
 		8E89000E1DADEC0D00D81CBA /* UINavigationBar+axesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+axesome.swift"; sourceTree = "<group>"; };
 		8E89FFFA1DADDAAD00D81CBA /* TimeLearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLearnViewController.swift; sourceTree = "<group>"; };
+		8ECF6D1B1DB7687100CF42FC /* BackGroundVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackGroundVideoController.swift; sourceTree = "<group>"; };
+		8ECF6D1D1DB76A0100CF42FC /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		8ECF6D1F1DB777BD00CF42FC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRefreshViewController.swift; sourceTree = "<group>"; };
 		8EDE3B781DB5FEAD00412C49 /* Ecstasy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ecstasy.mp3; sourceTree = "<group>"; };
 		8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioAndColorViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +154,9 @@
 				8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */,
 				8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */,
 				8EDE3B7C1DB60F3B00412C49 /* ImagePreViewController.swift */,
+				8E82AAB01DB70BE600286A91 /* ImagePreScrollView.swift */,
+				8ECF6D1B1DB7687100CF42FC /* BackGroundVideoController.swift */,
+				8ECF6D1F1DB777BD00CF42FC /* LoginViewController.swift */,
 			);
 			name = "16-10-18";
 			sourceTree = "<group>";
@@ -192,6 +203,7 @@
 				8EDE4FDD1DACE1FF009FD5A3 /* Info.plist */,
 				8E8900001DADDDD800D81CBA /* Gaspar Regular.otf */,
 				8E5A200C1DAE20780076CFB1 /* emoji zone.mp4 */,
+				8ECF6D1D1DB76A0100CF42FC /* moments.mp4 */,
 				8EDE3B781DB5FEAD00412C49 /* Ecstasy.mp3 */,
 				8E8900011DADDDD800D81CBA /* MFJinHei_Noncommercial-Regular.ttf */,
 				8E8900021DADDDD800D81CBA /* MFTongXin_Noncommercial-Regular.ttf */,
@@ -337,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECF6D1E1DB76A0100CF42FC /* moments.mp4 in Resources */,
 				8E5A200D1DAE20780076CFB1 /* emoji zone.mp4 in Resources */,
 				8E8900061DADDDD800D81CBA /* MFTongXin_Noncommercial-Regular.ttf in Resources */,
 				8E8900071DADDDD800D81CBA /* MFZhiHei_Noncommercial-Regular.ttf in Resources */,
@@ -372,13 +385,16 @@
 				8EE5354F1DB1E822004BF2F7 /* CenterViewController.swift in Sources */,
 				8E8539B81DB0710B002642BA /* ImageBrowserViewController.swift in Sources */,
 				8EDE3B771DB5D50300412C49 /* PullRefreshViewController.swift in Sources */,
+				8E82AAB11DB70BE600286A91 /* ImagePreScrollView.swift in Sources */,
 				8EE5354D1DB1E819004BF2F7 /* RightViewController.swift in Sources */,
 				8E5A20091DAE1E290076CFB1 /* LocalVedioViewController.swift in Sources */,
+				8ECF6D1C1DB7687100CF42FC /* BackGroundVideoController.swift in Sources */,
 				8E8539BA1DB071BF002642BA /* LClineLayout.swift in Sources */,
 				8EE5354B1DB1E810004BF2F7 /* LeftViewController.swift in Sources */,
 				8EDE3B7D1DB60F3B00412C49 /* ImagePreViewController.swift in Sources */,
 				8EE535491DB1E7FF004BF2F7 /* MoveTestViewController.swift in Sources */,
 				8E89000F1DADEC0D00D81CBA /* UINavigationBar+axesome.swift in Sources */,
+				8ECF6D201DB777BD00CF42FC /* LoginViewController.swift in Sources */,
 				5011AD1F1DAD33E3007821F5 /* HearderDefine.swift in Sources */,
 				8E6BFC941DACE7C7009B6E10 /* FirstViewController.swift in Sources */,
 				8E8539BC1DB07275002642BA /* LineCollectionViewCell.swift in Sources */,
