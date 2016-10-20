@@ -37,11 +37,12 @@ class LoginViewController: BackGroundVideoController {
         sound = true
         startTime = 2.0
         alpha = 0.8
-        
+        duration = 15.0
         contentURL = url as URL!
     }
     
     func login() -> Void {
+        
         self.navigationController?.pushViewController(ImagePreViewController.init(), animated: true)
     }
 }

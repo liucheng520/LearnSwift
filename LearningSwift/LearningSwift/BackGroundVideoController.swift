@@ -75,6 +75,7 @@ class BackGroundVideoController: UIViewController {
     //播放路径
     public var contentURL : URL!{
         didSet{
+            
             setMoviePlayer(playerUrl: contentURL)
         }
     }
@@ -87,11 +88,15 @@ class BackGroundVideoController: UIViewController {
     
     //开始播放
     func setMoviePlayer(playerUrl : URL) -> Void {
-        self.moviePlayer.player = AVPlayer.init(url: playerUrl)
-        self.moviePlayer.player?.play()
-        self.moviePlayer.showsPlaybackControls = false //不显示进度条之类的
-        self.moviePlayer.view.isUserInteractionEnabled = false
-        self.moviePlayer.player?.volume = self.moviePlayerSoundLevel
+        
+        VedioCut.init().cutVideo(videoURL: playerUrl, startTime: startTime, duration: duration) { (showURL, error) in
+            
+            if let path = showURL as URL?{
+                self.moviePlayer.player = AVPlayer.init(url: path)
+                self.moviePlayer.player?.volume = self.moviePlayerSoundLevel
+                self.moviePlayer.player?.play()
+            }
+        }
     }
     
     //重复播放，把播放时间置为0.并开始播放
@@ -109,6 +114,8 @@ class BackGroundVideoController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         moviePlayer.view.frame = view.frame
+        moviePlayer.showsPlaybackControls = false //不显示进度条之类的
+        moviePlayer.view.isUserInteractionEnabled = false
         view.addSubview(moviePlayer.view)
         view.sendSubview(toBack: moviePlayer.view)
     }

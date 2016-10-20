@@ -28,6 +28,7 @@
 		8ECF6D1C1DB7687100CF42FC /* BackGroundVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF6D1B1DB7687100CF42FC /* BackGroundVideoController.swift */; };
 		8ECF6D1E1DB76A0100CF42FC /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8ECF6D1D1DB76A0100CF42FC /* moments.mp4 */; };
 		8ECF6D201DB777BD00CF42FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF6D1F1DB777BD00CF42FC /* LoginViewController.swift */; };
+		8ECF6D221DB77E3D00CF42FC /* VedioCut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF6D211DB77E3D00CF42FC /* VedioCut.swift */; };
 		8EDE3B771DB5D50300412C49 /* PullRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */; };
 		8EDE3B791DB5FEAD00412C49 /* Ecstasy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE3B781DB5FEAD00412C49 /* Ecstasy.mp3 */; };
 		8EDE3B7B1DB5FECF00412C49 /* AudioAndColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */; };
@@ -83,6 +84,7 @@
 		8ECF6D1B1DB7687100CF42FC /* BackGroundVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackGroundVideoController.swift; sourceTree = "<group>"; };
 		8ECF6D1D1DB76A0100CF42FC /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
 		8ECF6D1F1DB777BD00CF42FC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8ECF6D211DB77E3D00CF42FC /* VedioCut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VedioCut.swift; sourceTree = "<group>"; };
 		8EDE3B761DB5D50300412C49 /* PullRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRefreshViewController.swift; sourceTree = "<group>"; };
 		8EDE3B781DB5FEAD00412C49 /* Ecstasy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ecstasy.mp3; sourceTree = "<group>"; };
 		8EDE3B7A1DB5FECF00412C49 /* AudioAndColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioAndColorViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				8E82AAB01DB70BE600286A91 /* ImagePreScrollView.swift */,
 				8ECF6D1B1DB7687100CF42FC /* BackGroundVideoController.swift */,
 				8ECF6D1F1DB777BD00CF42FC /* LoginViewController.swift */,
+				8ECF6D211DB77E3D00CF42FC /* VedioCut.swift */,
 			);
 			name = "16-10-18";
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				8E89000F1DADEC0D00D81CBA /* UINavigationBar+axesome.swift in Sources */,
 				8ECF6D201DB777BD00CF42FC /* LoginViewController.swift in Sources */,
 				5011AD1F1DAD33E3007821F5 /* HearderDefine.swift in Sources */,
+				8ECF6D221DB77E3D00CF42FC /* VedioCut.swift in Sources */,
 				8E6BFC941DACE7C7009B6E10 /* FirstViewController.swift in Sources */,
 				8E8539BC1DB07275002642BA /* LineCollectionViewCell.swift in Sources */,
 				8E8900091DADDFEC00D81CBA /* FontLearnViewController.swift in Sources */,
