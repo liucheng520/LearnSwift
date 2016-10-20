@@ -73,6 +73,7 @@ class LocalVedioCell: UITableViewCell {
     }
 
     public func setVedio(vedioM:vedio) -> Void {
+        
         backImageView.image = UIImage.init(named: vedioM.imageUrl)
         nameLabel.text = vedioM.name
         timeLable.text = vedioM.time
@@ -81,7 +82,9 @@ class LocalVedioCell: UITableViewCell {
     override func layoutSubviews() {
         
         super.layoutSubviews()
+        
         playBtn.frame = CGRect.init(x: 0, y: 0, width: 50, height: 50)
+        
         playBtn.center = CGPoint.init(x: frame.size.width * 0.5, y: frame.size.height * 0.5)
         
         backImageView.frame = CGRect.init(x: 0, y: 0, width: kScreenWidth, height: frame.height)
@@ -92,6 +95,8 @@ class LocalVedioCell: UITableViewCell {
     }
     
     func playBtnClick() -> Void {
+        
         delegate.playBtnClick(btnClick: true)
+        
     }
 }

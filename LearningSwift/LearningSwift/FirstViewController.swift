@@ -23,6 +23,11 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        animateTable()
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
@@ -35,7 +40,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        return 60
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -88,5 +93,34 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.00001
+    }
+    
+    //将tableview上所有可见的cell往下偏移一个屏幕，然后在依次恢复
+    func animateTable() {
+        
+        self.tableView.reloadData()
+        
+        let cells = tableView.visibleCells
+        let tableHeight: CGFloat = tableView.bounds.size.height
+        
+        for i in cells {
+            let cell: UITableViewCell = i as UITableViewCell
+            cell.transform = CGAffineTransform(translationX: 0, y: tableHeight)
+        }
+        
+        var index = 0
+        
+        for a in cells {
+            
+            let cell: UITableViewCell = a as UITableViewCell
+            
+            UIView.animate(withDuration: 1.5, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+                
+                cell.transform = CGAffineTransform(translationX: 0, y: 0);
+                
+                }, completion: nil)
+            
+            index += 1
+        }
     }
 }

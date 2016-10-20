@@ -52,7 +52,7 @@ class LoginAnimationViewController: UIViewController {
     
     //登录按钮动画
     func loginBtnAnimation() -> Void {
-        
+
     }
     
     //显示核心动画
@@ -62,8 +62,10 @@ class LoginAnimationViewController: UIViewController {
 
         userNameTextField.frame.origin.x = 20 - kScreenWidth
         userNameTextField.isHidden = true
+        
         passWordTextField.frame.origin.x = 20 - kScreenWidth
         passWordTextField.isHidden = true
+        
         loginBtn.frame.origin.x = 100 - kScreenWidth
         loginBtn.isHidden = true
     }
@@ -73,19 +75,33 @@ class LoginAnimationViewController: UIViewController {
         super.viewDidAppear(animated)
         
         UIView.animate(withDuration: 0.5) {
+            
             self.userNameTextField.frame.origin.x = 20
             self.userNameTextField.isHidden = false
         }
         
-        UIView.animate(withDuration: 0.5, delay: 0.2, options: UIViewAnimationOptions.curveEaseInOut, animations: { 
+        UIView.animate(withDuration: 0.5, delay: 0.2, options: UIViewAnimationOptions.curveEaseInOut, animations: {
+            
             self.passWordTextField.frame.origin.x = 20
             self.passWordTextField.isHidden = false
+            
         }) { (anima) in }
         
         UIView.animate(withDuration: 0.5, delay: 0.3, options: UIViewAnimationOptions.curveEaseInOut, animations: {
+            
             self.loginBtn.frame.origin.x = 100
             self.loginBtn.isHidden = false
-        }) { (anima) in}
+            
+        }) { (anima) in
+            
+            let bounds = self.loginBtn.bounds
+            
+            UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: UIViewAnimationOptions.curveLinear, animations: {
+                
+                self.loginBtn.bounds = CGRect.init(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 60, height: bounds.size.height)
+                
+            }) { (final) in}
+        }
     }
 
 }
