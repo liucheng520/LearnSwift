@@ -40,6 +40,7 @@
 		8EDE4FF21DACE1FF009FD5A3 /* LearningSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE4FF11DACE1FF009FD5A3 /* LearningSwiftUITests.swift */; };
 		8EDE50001DACE3AC009FD5A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE4FFF1DACE3AC009FD5A3 /* MainViewController.swift */; };
 		8EE23B001DB893FA0079F4DD /* LoginAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE23AFF1DB893FA0079F4DD /* LoginAnimationViewController.swift */; };
+		8EE23B0A1DB8C14F0079F4DD /* EmojMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE23B091DB8C14F0079F4DD /* EmojMachine.swift */; };
 		8EE535491DB1E7FF004BF2F7 /* MoveTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE535481DB1E7FF004BF2F7 /* MoveTestViewController.swift */; };
 		8EE5354B1DB1E810004BF2F7 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5354A1DB1E810004BF2F7 /* LeftViewController.swift */; };
 		8EE5354D1DB1E819004BF2F7 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5354C1DB1E819004BF2F7 /* RightViewController.swift */; };
@@ -103,6 +104,7 @@
 		8EDE4FF31DACE1FF009FD5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EDE4FFF1DACE3AC009FD5A3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8EE23AFF1DB893FA0079F4DD /* LoginAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAnimationViewController.swift; sourceTree = "<group>"; };
+		8EE23B091DB8C14F0079F4DD /* EmojMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojMachine.swift; sourceTree = "<group>"; };
 		8EE535481DB1E7FF004BF2F7 /* MoveTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveTestViewController.swift; sourceTree = "<group>"; };
 		8EE5354A1DB1E810004BF2F7 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		8EE5354C1DB1E819004BF2F7 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				8EE23AFF1DB893FA0079F4DD /* LoginAnimationViewController.swift */,
+				8EE23B091DB8C14F0079F4DD /* EmojMachine.swift */,
 			);
 			name = "16-10-20";
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				8E8539B81DB0710B002642BA /* ImageBrowserViewController.swift in Sources */,
 				8EDE3B771DB5D50300412C49 /* PullRefreshViewController.swift in Sources */,
 				8E82AAB11DB70BE600286A91 /* ImagePreScrollView.swift in Sources */,
+				8EE23B0A1DB8C14F0079F4DD /* EmojMachine.swift in Sources */,
 				8EE5354D1DB1E819004BF2F7 /* RightViewController.swift in Sources */,
 				8EE23B001DB893FA0079F4DD /* LoginAnimationViewController.swift in Sources */,
 				8E5A20091DAE1E290076CFB1 /* LocalVedioViewController.swift in Sources */,

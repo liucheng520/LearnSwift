@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow.init()
         window?.makeKeyAndVisible()
-        window?.rootViewController = MainViewController.init()
+        window?.rootViewController = EmojMachine.init()
         return true
     }
 
