@@ -43,6 +43,6 @@ class LoginViewController: BackGroundVideoController {
     
     func login() -> Void {
         
-        self.navigationController?.pushViewController(ImagePreViewController.init(), animated: true)
+        self.navigationController?.pushViewController(LoginAnimationViewController.init(), animated: true)
     }
 }
