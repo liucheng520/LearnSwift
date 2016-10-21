@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5011AD1F1DAD33E3007821F5 /* HearderDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011AD1E1DAD33E3007821F5 /* HearderDefine.swift */; };
+		8E374C651DB9AFA300F7B0DE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E374C641DB9AFA300F7B0DE /* AlertView.swift */; };
 		8E595D0D1DB4D2BC0078BCC3 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E595D0C1DB4D2BC0078BCC3 /* LocationViewController.swift */; };
 		8E5A20091DAE1E290076CFB1 /* LocalVedioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A20081DAE1E290076CFB1 /* LocalVedioViewController.swift */; };
 		8E5A200B1DAE1F160076CFB1 /* LocalVedioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A200A1DAE1F160076CFB1 /* LocalVedioCell.swift */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		5011AD1E1DAD33E3007821F5 /* HearderDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearderDefine.swift; sourceTree = "<group>"; };
+		8E374C641DB9AFA300F7B0DE /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		8E595D0C1DB4D2BC0078BCC3 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		8E5A20081DAE1E290076CFB1 /* LocalVedioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalVedioViewController.swift; sourceTree = "<group>"; };
 		8E5A200A1DAE1F160076CFB1 /* LocalVedioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalVedioCell.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			children = (
 				8EE23AFF1DB893FA0079F4DD /* LoginAnimationViewController.swift */,
 				8EE23B091DB8C14F0079F4DD /* EmojMachine.swift */,
+				8E374C641DB9AFA300F7B0DE /* AlertView.swift */,
 			);
 			name = "16-10-20";
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				8EE23B001DB893FA0079F4DD /* LoginAnimationViewController.swift in Sources */,
 				8E5A20091DAE1E290076CFB1 /* LocalVedioViewController.swift in Sources */,
 				8ECF6D1C1DB7687100CF42FC /* BackGroundVideoController.swift in Sources */,
+				8E374C651DB9AFA300F7B0DE /* AlertView.swift in Sources */,
 				8E8539BA1DB071BF002642BA /* LClineLayout.swift in Sources */,
 				8EE5354B1DB1E810004BF2F7 /* LeftViewController.swift in Sources */,
 				8EDE3B7D1DB60F3B00412C49 /* ImagePreViewController.swift in Sources */,

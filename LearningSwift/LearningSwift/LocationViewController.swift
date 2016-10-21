@@ -47,6 +47,8 @@ class LocationViewController: UIViewController,CLLocationManagerDelegate {
     //获取定位结果，并转码
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
+        print(manager.location?.coordinate.latitude)
+        print(manager.location?.coordinate.longitude)
         CLGeocoder.init().reverseGeocodeLocation(manager.location!) { (placeMarks, error) in
             if error != nil {
                 self.placeLabel.text = "Reverse geocoder failed with error" + error!.localizedDescription
